@@ -1,28 +1,22 @@
 # ----------------------------------------------------
 #   Installing packages for new R version.
 #   Michael DeCrescenzo
-#   
-#   Hi, I'm a social science PhD student looking for 
-#     a quantitative research/data science job.
-#   Learn more at <mikedecr.github.io> and <github.com/mikedecr>
 # 
 #   This script deals with the following problem:
-#   I upgraded to new major version of R, & I want to reinstall packages.
-#   However I don't simply want to get all installed.packages() from CRAN.
-#   Why not? 
-#   I may be using an experimental pkg version that is more recent.
-#   Or the pkg isn't on CRAN at all, so I want to install from Github (e.g.).
+#   You upgrade to new major version of R & want to reinstall packages.
+#   However, you don't simply want to get all installed.packages() from CRAN
+#     because you may be using an experimental version that is more recent.
+#   Or, the pkg isn't on CRAN at all, so you want to obtain from (e.g.) Github
 #   
-#   This script contains steps to implement the following.
-#   (I recommend you go through slowly)
+#   This script does the following:
 # 
 #   1. Save installed package info (name, version, source/github repo)
-#   2. Compare local package versions to what's on CRAN 
-#      to see if I should install from CRAN 
-#      or from some other repository.
+#   2. Compare local package versions to CRAN 
+#      to see if local is ahead of CRAN.
 #   3. Do the installing (after updating R)
 # 
 # ----------------------------------------------------
+
 
 # you should be working out of some directory for this.
 # For me it's ~/tools/update-R
